@@ -163,5 +163,6 @@ abstract class ArrayCollection implements Countable, ArrayAccess, Iterator
     {
         $this->validateType($item, $this->typeOfCollection());
         $this->items[] = $item;
+        $this->rewind();
     }
 }
