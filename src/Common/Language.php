@@ -23,4 +23,8 @@ class Language extends StringValueObject
 
         parent::setValue($value);
     }
+
+    public static function isValid(string $language){
+        return in_array($language, Language::ISO_639_1_CODES);
+    }
 }
